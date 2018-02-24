@@ -1,1 +1,2 @@
-gitthe
+Git is a distributed version 控制 system. 我什么的
+Git is free software.
