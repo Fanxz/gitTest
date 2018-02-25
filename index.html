@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>新华日报</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+</style>	
+</head>
+<body>
+	<ul class="fingerBox">
+		<li class="finger-li searchDate bg-r pos-r">
+			<i class="icon-fing icon-date "></i>
+			<span class="date-words">选择日期</span>
+			<!-- <input type="text" name="dateInput" id="calendar-mobile-single"> -->
+		</li>
+		<li class="finger-li searchBtnShow hide">
+			<i class="icon-fing icon-search"></i>
+			<span class="date-words">搜索关键词</span>
+		</li>
+		<!--<li class="finger-li finger-li-ye hide"  id="signature-btn">
+			<i class="icon-fing icon-sign"></i>
+			<span class="date-words">签名留念</span>
+		</li>-->
+		<li class="finger-li finger-li-ye" >
+			<span class="date-words date-w2 qianzi fl" id="signature-btn">签字</span>
+			<span class="date-words date-w2 dayin fl" id="print-btn">打印</span>
+		</li>
+		<li class="finger-li searchReload bg-e66221">
+			<i class="icon-fing icon-reload"></i>
+			<span class="date-words">返回首页</span>
+		</li>
+	</ul>
+	<div class="date-box hide">
+		<div class="date-title">选择日期</div>
+		<i class="date-close">X</i>
+		<ul class="number-box">
+			<li >
+				<input type="text" name="year" value="" placeholder="" class="date-year" autofocus="autofocus">
+				<span class="date-w">年</span>
+			</li>
+			<li >
+				<input type="text" name="month" value="" placeholder="" class="date-month">
+				<span class="date-w">月</span>
+			</li>
+			<li >
+				<input type="text" name="day" value="" placeholder="" class="date-day">
+				<span class="date-w">日</span>
+			</li>
+			<li class="number" data-value="1">1</li>
+			<li class="number" data-value="2">2</li>
+			<li class="number" data-value="3">3</li>
+			<li class="number" data-value="4">4</li>
+			<li class="number" data-value="5">5</li>
+			<li class="number" data-value="6">6</li>
+			<li class="number" data-value="7">7</li>
+			<li class="number" data-value="8">8</li>
+			<li class="number" data-value="9">9</li>
+			<li class="date-delete"><img src="./images/icon_delete.png" class="deleimg"></li>
+			<li class="number" data-value="0">0</li>
+			<li class="date-confirm">确定</li>
+		</ul>
+	</div>
+	<a href="javascript:;" class="data-init hide">返回</a>
+	<img src="./images/left.png" class="screenLeft">
+	<img src="./images/right.png" class="screenRight">
+	
+	<div class="swiper-container swiper-MainBox">
+	  <div class="swiper-wrapper">
+	    
+	    <div class="swiper-slide">
+	    	<div class="main main-com pos-r">
+	    		<img src="./images/bg1.jpg" class="bg1img">
+				<!--轮播1start-->
+				<div class="swiper-container swiper-head">
+				  <div class="swiper-wrapper">
+				  </div>
+				</div>
+				<!--轮播1end-->
+				<div class="swiper-button-next2"></div>
+				<div class="swiper-button-prev2"></div>
+				<div class="alertBg2 hide"></div>
+				<div class="searchBox hide">
+					<div class="search-main pos-r fl">
+						<div class="sele-box fl" id="seleChenge">
+							<a href="javascript:;" class="curr-search">全文</a>
+						</div>
+						<input class="search-inputV s1 fl" type="text" value="" name="input_date" placeholder="请输入关键词" />
+					</div>
+					
+					<a href="javascript:;" class="search-button fr">搜索</a>
+					<!-- <a href="javascript:;" class="signature-btn fl"  id="signature-btn">签名</a>
+					<a href="javascript:;" class="signature-btn hide fl"  id="print-btn">打印</a> -->
+				</div>
+				
+				
+				
+				<!--轮播2start-->
+				<div class="swiper-container swiper-bottom">
+				  <div class="swiper-wrapper">
+				  </div>
+				</div>
+				<!--轮播2end-->
+				<div class="signature-box">
+					<div id="signature" class="sign-btn"></div>
+					<div class="sig-tips">
+						<a href="javascript:;" class="si-btn sig-print" id="print-btn2">打印</a>
+						<a href="javascript:;" class="si-btn sig-cancel">取消</a>
+						<a href="javascript:;" class="si-btn sig-re">重签</a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+	<!--搜索 start-->
+	<div class="alertBg hide"></div>
+	<div class="alertBox hide">
+		<span class="headImg"><img class="icon-img" src="./images/search-icon.png"></span>
+		<p class="alert-words">没有找到数据...</p>
+	</div>
+	<!--搜索 end-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<!--signature-->
+	<script type="text/javascript" src="libs/modernizr.js"></script>
+	<script type="text/javascript" src="libs/jSignature.min.noconflict.js"></script>
+	<script type="text/javascript" src="js/own_swiper.js"></script>
+</body>
+</html>
